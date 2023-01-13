@@ -215,4 +215,4 @@ if __name__ == "__main__":
 
     # Run the algorithm.
     result = QuantumFourierTransform.simulate(state_int)
-    print("Result: " + result["result"])
+    print(f"iQFT result: {result['result']}")
