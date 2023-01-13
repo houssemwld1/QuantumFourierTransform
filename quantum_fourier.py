@@ -90,6 +90,22 @@ class QuantumFourierTransform:
         return QuantumFourierTransform.qft(QuantumCircuit(qubit_count))
 
     @staticmethod
+    def iqft_circuit(qubit_count: int) -> QuantumCircuit:
+        """Create a iQFT circuit with given Qubit count.
+
+        Parameters
+        ----------
+        qubit_count : int
+            The number of qubits to use in the circuit.
+
+        Returns
+        -------
+        QuantumCircuit
+            The iQFT circuit.
+        """
+        return QuantumFourierTransform.iqft(QuantumCircuit(qubit_count))
+
+    @staticmethod
     def iqft(circuit: QuantumCircuit) -> QuantumCircuit:
         """Apply inverse QFT to a circuit.
 
