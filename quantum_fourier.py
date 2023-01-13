@@ -202,3 +202,17 @@ class QuantumFourierTransform:
         for qubit in qubits_list:
             circuit.swap(qubit, qubit_count - qubit - 1)
         return circuit
+
+
+
+if __name__ == "__main__":
+    print("===================================")
+    print("Quantum Fourier Transform Simulator")
+    print("===================================")
+
+    # Get the input state as integer decimal.
+    state_int = int(input("> Enter the state as decimal integer: "))
+
+    # Run the algorithm.
+    result = QuantumFourierTransform.simulate(state_int)
+    print("Result: " + result["result"])
