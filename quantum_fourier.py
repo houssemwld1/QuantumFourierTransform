@@ -3,8 +3,7 @@ This module contains the Quantum Fourier Transform class.
 """
 
 from numpy import pi
-from qiskit import QuantumCircuit, transpile, assemble, Aer
-from qiskit.visualization import plot_histogram, plot_bloch_multivector
+from qiskit import QuantumCircuit
 
 
 class QuantumFourierTransform:
